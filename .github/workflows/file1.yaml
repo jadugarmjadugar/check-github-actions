@@ -12,4 +12,10 @@ jobs:
     steps:
       - name: commands
         run: echo "hello world1"
+  jobs2:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: commands
+        run: echo "hello world2"
      
